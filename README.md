@@ -10,20 +10,17 @@ Mbti란 일상생활에 활용할 수 있도록 고안된 자기보고식 성격
 2.   사용자가 선택한 항목을 통해 분석한 mbti와 mbti별 캐릭터, 그리고 어울리는 학과를 결과로 제공
     -   16가지의 성격 유형과 각 유형별로 3가지 이상의 학과 제공
 3.   결과 공유가 가능한 안내 창 제공
-<br>
-기능을 정리한 UML diagram과 우리 팀이 개발하려고 하는 테스트와 가장 유사한 특징을 지닌 테스트를 아래에 첨부하였고, 이를 토대로 우리 팀의 테스트 형식을 간략히 소개할 예정이다.<br>
-
-![image](https://user-images.githubusercontent.com/74875490/169927941-e68bf041-ce0a-45f6-82e8-f0903cc4fa6b.png)
-UML diagram을 이용하여 시스템에서 제공하는 기능을 정리해보았다.<br>
 
 ### 페이지 디자인 예시
 1. 테스트 시작 페이지
-테스트 첫 페이지는 귀여운 시그니처 캐릭터와 함께 단국대학교를 배경으로 하는 이미지로 이루어질 예정이다.<br>
-![image](https://user-images.githubusercontent.com/74875490/168406587-7182d081-0904-471a-875e-918fbecefa57.png)<br>
+테스트 첫 페이지는 귀여운 시그니처 캐릭터와 함께 시작버튼으로 이루어진다.<br>
+![image](https://user-images.githubusercontent.com/74875490/171296686-f3895e75-94c6-411d-a730-f8f0fcc1ba51.png)<br>
 
 2. 항목 선택 페이지
 테스트를 시작하면, 다음과 같이 사용자의 성격 유형을 분석할 수 있는 항목들을 보여준다. 사용자는 자신과 맞는 항목을 선택한다.<br>
-![image](https://user-images.githubusercontent.com/74875490/168406601-ea3321c3-181d-47d1-9b73-35e43051f6a9.png)<br>
+![image](https://user-images.githubusercontent.com/74875490/171296814-39f999cb-04c4-4748-a557-4ef1161e9ff6.png)<br>
+![image](https://user-images.githubusercontent.com/74875490/171297282-23095625-6bca-4c6c-a7bd-c6fa67ec1f7a.png)<br>
+
 
 3. 분석 중임을 알리는 페이지
 테스트 속 모든 질문에 응답했다면, 다음과 같이 어떤 유형인지 분석하는 창을 보여주며 결과 창으로 넘어가도록 설계할 예정이다.<br>
@@ -47,9 +44,9 @@ UML diagram을 이용하여 시스템에서 제공하는 기능을 정리해보�
 ## 개발 일정 및 역할 분담
 ### 개발 일정
 - 10주차
-html, css, javascript를 이용한 웹 페이지 개발, 우리 팀의 테스트 표지 디자인 개발하기
+mbti 질문지 정리하기, 심리테스트 로직 설계하기, 우리 팀의 테스트 표지 디자인 개발하기
 - 11주차
-spring/django를 이용한 웹 개발, 심리테스트 로직 구현하기
+html, css, javascript를 이용한 웹 페이지 개발, 심리테스트 로직 구현하기
 - 12주차
 배포 및 추가 반영 사항 수정하여 테스트 구현 최종점검
 - 13주차
