@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국 관광지 테스트</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        input[type=radio]{
+            display: none;
+            margin:10px;
+        }
+        input[type=radio]+label{
+            display:inline-block;
+            margin:2px;
+            padding: 8px 19px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            font-size: 13px !important;
+            width: 700px;
+            text-align:center;
+        }
+        input[type=radio]:checked+label{
+            background-color: #78c2ad;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="py-4 text-center">
+            <a href="index.html"><h3>학과 mbti test</h1></a>
+        </div>
+    </header>
+    <section>
+        <div class="py-4 text-center">
+        <article>
+            <div class="container">
+                <form class="form">
+                    <h4>문제1</h2>
+                    <p>떨리는 새학기 개강! 학과 개강총회를 가게 되었다.<br>
+                    모르는 사람들과 테이블을 같이 앉게 되었을 때 어떻게 할까?</p>
+                    <div>
+                        <input type="radio" name="EI" id="1-1" class="E_btn">
+                        <label for="1-1">새로운 사람들 만나는거 좋아! 스몰토크로 대화를 시작해볼까?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="1-2" class="E_btn">
+                        <label for="1-2">(옆자리 동기에게)인스타그램 하세요? 맞팔하실래요?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="1-3"class="I_btn">
+                        <label for="1-3">조용히 앉아서 분위기를 파악한다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="1-4" class="I_btn">
+                        <label for="1-4">누가 먼저 말걸어 줬으면 좋겠다....(훌쩍)</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제2</h2>
+                    <p>대면 수업이었던 수업이 갑자기 휴강하게 되었다.<br>
+                        갑자기 시간이 비어버렸다. 나의 선택은?</p>
+                    <div>
+                        <input type="radio" name="EI" id="2-1" class="E_btn">
+                        <label for="2-1">같이 수업듣는 친구들과 휴강을 기뻐하며 놀러가자는 이야기를 꺼낸다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="2-2" class="E_btn">
+                        <label for="2-2">학교 앞에 술집 생겼더라! 거기 가자~ 오늘 막차 몇시?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="2-3" class="I_btn">
+                        <label for="2-3">아싸리~! 집으로가서 간식을 먹으며 밀린 드라마, 영화를 보거나 취미생활을 즐긴다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="2-4" class="I_btn">
+                        <label for="2-4">그 누구보다 빠르게 학교 셔틀 시간을 검색한다. 그 누구도 집가는 날 막을 수 없어.</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제3</h2>
+                    <p>친해진 대학 동기들과 술을 먹는 자리에 참석하게 되었다.<br>
+                        늦은 시간까지 술을 마실 때 어떻게 할까?</p>
+                    <div>
+                        <input type="radio" name="EI" id="3-1" class="E_btn">
+                        <label for="3-1">점점 더 신이난다! 내 주변 친구들과 시끄러운 술자리! (집 가기 싫어!!)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="3-2" class="E_btn">
+                        <label for="3-2">막차 애매한데? 그냥 첫차 타고 가자!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="3-3" class="I_btn">
+                        <label for="3-3">재밌게 놀았지만, 에너지 고갈로 집에 가고 싶어진다! 자리 정리!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="EI" id="3-4" class="I_btn">
+                        <label for="3-4">(즐겁다.. 하지만)일단 내일은 집에서 쉬어야겠다.</label>
+                    </div>
+                </form>
+                <br>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <form class="form m-2">
+                    <h4>문제4</h2>
+                    <p>종강 후, 동기들이랑 여행을 가고 있다. 나는 무엇을 하고 있는가?</p>
+                    <div>
+                        <input type="radio" name="SN" id="4-1" class="S_btn">
+                        <label for="4-1">운전을 하고 있는 나.. 네비게이션을 전적으로 신뢰한다..</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="4-2" class="S_btn">
+                        <label for="4-2">저녁 요리를 준비 중인 나, 레시피 북을 참고한다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="4-3" class="N_btn">
+                        <label for="4-3">운전을 하고 있는 나.. 네비게이션이 알려준 길보다 이길이 빠를 것 같은데? </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="4-4" clas="N_btn">
+                        <label for="4-4">요리는 손맛! 눈대중으로 간을 맞춘다.</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제5</h2>
+                    <p>집에 돌아가는 길.. 에어팟을 안가지고 왔다 ㅠ 하필 핸드폰 배터리도 10%.. 나는 지금 무슨 생각을 하고 있는가?</p>
+                    <div>
+                        <input type="radio" name="SN" id="5-1" class="S_btn">
+                        <label for="5-1">멍..(아무 생각 없음)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="5-2" class="S_btn">
+                        <label for="5-2">아까 편의점에서 충전기 사서 충전할걸 그랬나? 아 집에 가서 뭐 먹지..</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="5-3" class="N_btn">
+                        <label for="5-3">아무 생각을 하지 말라고? 그럼 생각을 휴지통에 버려야지</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="5-4" class="N_btn">
+                        <label for="5-4">(앞자리 아저씨 머리가 반짝인다.. ) 이 세상 사람들이 모두 대머리가 되면 어떡하지? 모두가 대머리인 세상에서 가발 시장이 추구해야할 방향은 무엇일까?</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제6</h2>
+                    <p>시험 2주전 시험 공부를 하고 있는 나, 지금 무엇을 하고 있는가?</p>
+                    <div>
+                        <input type="radio" name="SN" id="6-1" class="S_btn">
+                        <label for="6-1">자세하게 메모해놔서 다행이다. 수업 중 필기한 구체적 정보까지 외워야지!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="6-2" class="S_btn">
+                        <label for="6-2">이런 규칙이 있구나! 분명하고 현실적이서 이해가 잘되네~</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="6-3" class="N_btn">
+                        <label for="6-3">(알게된 정보를 오래도록 곱씹은 다음) 실제 상황에 적용해보면서 검증해봐야지~</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="SN" id="6-4" class="N_btn">
+                        <label for="6-4">시험 없는 세상은 어떨까? 시험은 왜 존재하고 왜 봐야할까?</label>
+                    </div>
+                </form>
+                <br>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <form class="form m-2">
+                    <h4>문제7</h2>
+                    <p>친구와의 대화에서 나의 반응은?<br>
+                    친구: 나 힘들게 돈 벌어서 아이패드 샀어!!<br>
+                    나: _________________________________<br>
+                    </p>
+                    <div>
+                        <input type="radio" name="TF" id="7-1" class="T_btn">
+                        <label for="7-1">오 진짜? 아이패드 뭐 샀는데?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="7-2" class="T_btn">
+                        <label for="7-2">아이패드 얼마였는데?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="7-3" class="F_btn">
+                        <label for="7-3">기분 좋겠네!!! 나도 돈 모아서 사고 싶은거 사고 싶다~</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="7-4" class="F_btn">
+                        <label for="7-4">헐, 고생 많았네~ 돈 모을 때, 힘들지 않았어?? 대단하다~</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제8</h2>
+                    <p>둘 중에 더 화가 나는 상황과 나의 반응은?
+                        <br>
+                        <b>상황1.</b>카페에서 공부를 하다가 잠시 화장실에 갔다.<br>
+                        그 사이 누군가가 허락을 받지 않고 나의 노트를 사진으로 찍어갔다.
+                        <br>
+                        <b>상황2.</b>카페에서 공부를 하다가 잠시 화장실에 갔다.<br>
+                        그 사이 친구가 나를 위해 음료를 사주다가 노트에 그 음료를 엎었다.</p>
+                    <div>
+                        <input type="radio" name="TF" id="8-1" class="T_btn">
+                        <label for="8-1">상황2가 더 화나는데? 왜 사달라고 하지도 않은 음료를
+                            굳이 사주다가 내 노트에 엎는거야?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="8-2" class="T_btn">
+                        <label for="8-2">상황2가 더 화나지. 상황1은 나에게 피해를 끼치는게 없지만
+                            상황2는 나에게 피해를 줬잖아.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="8-3" class="F_btn">
+                        <label for="8-3">상황1이 더 화나. 상황2는 나를 위해 사주다가 그렇게 됐지만....
+                            아니! 나한테 빌려달라고 말하면 되는걸 왜 멋대로 찍어가? 
+                            그렇게 몰래 찍어갔어야만 속이 후련했냐?!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="8-4" class="F_btn">
+                        <label for="8-4">당연히 상황1이지. 아니 어떻게 나한테 허락도 없이
+                            노트를 맘대로 찍어가! 내가 얼마나 열심히 정리한 건데!</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제9</h2>
+                    <p>자신이 원하는 만큼의 점수를 받지 못한 친구가
+                        속상해하며 나에게 전화를 걸어왔다.
+                        이때 나의 반응은?</p>
+                    <div>
+                        <input type="radio" name="TF" id="9-1" class="T_btn">
+                        <label for="9-1">뭐 틀렸는데? 그 시험 원래 어렵기로 유명해. 그 시험 잘보려면
+                            ~~~~~~~ 하는게 좋아. (공부 방법을 알려준다.)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="9-2" class="T_btn">
+                        <label for="9-2">음, 어떤 시험이었는데? 교수님이 누구셔?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="9-3" class="F_btn">
+                        <label for="9-3">헐...내가 다 속상해...너 공부 진짜 열심히 했잖아.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="TF" id="9-4" class="F_btn">
+                        <label for="9-4">다음엔 더 잘 볼 수 있을거야! 내가 응원할게.</label>
+                    </div>
+                </form>
+                <br>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <form class="form m-2">
+                    <h4>문제10</h2>
+                    <p>학교 과제가 나왔다. 이때 나의 반응은?</p>
+                    <div>
+                        <input type="radio" name="JP" id="10-1" class="J_btn">
+                        <label for="10-1">(과제 내용을 읽어본 후)~요일에 ~시간 정도 하면 되겠네. 일정표에 적어놓는다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="10-2" class="J_btn">
+                        <label for="10-2">과제가 나오자마자 대충 끝내놓고, 남은 시간동안 검토하다가 여유롭게 제출!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="10-3" class="P_btn">
+                        <label for="10-3">일단 생각만 해놓고 지금 당장 급한거에 집중하는 편이다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="10-4" class="P_btn">
+                        <label for="10-4">마감 3시간 전, 그 누구보다 엄청난 집중력으로 과제 시작. 나는 3시간의 전사다!!!</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제11</h2>
+                    <p>온라인으로 강의를 듣는 세대가 되어버렸다. 나의 강의 수강 방식은 어떤 편인가?</p>
+                    <div>
+                        <input type="radio" name="JP" id="11-1" class="J_btn">
+                        <label for="11-1">매주 밀리지 않고 체크해가며 듣는 편이다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="11-2" class="J_btn">
+                        <label for="11-2">오늘은 전공강의 듣고, 내일은 과제 시작해야겠다! 메모메모</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="11-3" class="P_btn">
+                        <label for="11-3">그날 그날 듣고싶은 강의 먼저 듣고 기한 전까지만 완강한다!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="11-4" class="P_btn">
+                        <label for="11-4">음? 일주일 남았네~ 널널해~~</label>
+                    </div>
+                </form>
+                <br>
+                <form class="form m-2">
+                    <h4>문제12</h2>
+                    <p>친구들과 밥을 먹을 때, 나의 선택은?</p>
+                    <div>
+                        <input type="radio" name="JP" id="12-1" class="J_btn">
+                        <label for="12-1">가던 맛집이 제일 편하고 익숙하다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="12-2" class="J_btn">
+                        <label for="12-2">네이버지도를 켜고 미리 표시해놓은 맛집 리스트를 친구들에게 보여준다!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="12-3" class="P_btn">
+                        <label for="12-3">가던 곳을 자주가는 것보다 매번 새로운 곳을 추구한다.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="JP" id="12-4" class="P_btn">
+                        <label for="12-4">(친구들과 길을 걷다가)여기 가게 분위기 좋다~ 여기서 밥 먹자!</label>
+                    </div>
+                </form>
+            </div>
+        </article>
+        </div>
+    </section>
+    <footer>
+        <div class="py-4 text-center">
+            <button class="btn btn-primary m-1" onclick="result()">결과보기</button>
+        </div>
+    </footer>
+    <script>
+        function result(){
+            let E_count = 0;
+            let I_count = 0;
+            let EI=''
+
+            let elements_EI = document.getElementsByClassName('E_btn');
+            for (let i = 0; i < elements_EI.length; i++) {
+                if(elements_EI[i].checked){
+                    E_count++;
+                }
+                
+            }
+            elements_EI = document.getElementsByClassName('I_btn');
+            for (let i = 0; i < elements_EI.length; i++) {
+                if(elements_EI[i].checked){
+                    I_count++;
+                }
+            }
+            if(E_count>I_count){
+                EI="E";
+            }else{
+                EI="I";
+            }
+            let S_count = 0;
+            let N_count = 0;
+            let SN=''
+
+            let elements_SN = document.getElementsByClassName('S_btn');
+            for (let i = 0; i < elements_SN.length; i++) {
+                if(elements_SN[i].checked){
+                    S_count++;
+                }
+                
+            }
+            elements_SN = document.getElementsByClassName('N_btn');
+            for (let i = 0; i < elements_SN.length; i++) {
+                if(elements_SN[i].checked){
+                    N_count++;
+                }
+            }
+            if(S_count>N_count){
+                SN="S";
+            }else{
+                SN="N";
+            }
+ 
+            let T_count = 0;
+            let F_count = 0;
+            let TF=''
+
+            let elements_TF = document.getElementsByClassName('T_btn');
+            for (let i = 0; i < elements_TF.length; i++) {
+                if(elements_TF[i].checked){
+                    T_count++;
+                }
+                
+            }
+            elements_TF = document.getElementsByClassName('F_btn');
+            for (let i = 0; i < elements_TF.length; i++) {
+                if(elements_TF[i].checked){
+                    F_count++;
+                }
+                
+            }
+            if(T_count>N_count){
+                TF="T";
+            }else{
+                TF="F";
+            }
+
+            let J_count = 0;
+            let P_count = 0;
+            let JP=''
+
+            let elements_JP = document.getElementsByClassName('J_btn');
+            for (let i = 0; i < elements_JP.length; i++) {
+                if(elements_JP[i].checked){
+                    J_count++;
+                }
+                
+            }
+            elements_JP = document.getElementsByClassName('P_btn');
+            for (let i = 0; i < elements_JP.length; i++) {
+                if(elements_JP[i].checked){
+                    P_count++;
+                }
+                
+            }
+            if(J_count>P_count){
+                JP="J";
+            }else{
+                JP="P";
+            }
+
+            if (E_count+I_count+N_count+S_count+T_count+F_count+J_count+P_count != 12){
+                alert('모든 문제에 답해주세요');
+                return
+            }
+
+            result=EI+SN+TF+JP;
+            alert(result);
+            if(result == "ENTJ"){
+                location.href="result_ENTJ.html";
+            }else if(result == "ENTP"){
+                location.href="result_ENTP.html";
+            }else if(result == "ENFJ"){
+                location.href="result_ENFJ.html";
+            }else if(result == "ENFP"){
+                location.href="result_ENFP.html";
+            }else if(result == "ESTJ"){
+                location.href="result_ESTJ.html";
+            }else if(result == "ESTP"){
+                location.href="result_ESTP.html";
+            }else if(result == "ESTP"){
+                location.href="result_ESTP.html";
+            }else if(result == "ESFP"){
+                location.href="result_ESFP.html";
+            }else if(result == "INTJ"){
+                location.href="result_INTJ.html";
+            }else if(result == "INTP"){
+                location.href="result_INTP.html";
+            }else if(result == "INTP"){
+                location.href="result_INTP.html";
+            }else if(result == "INFP"){
+                location.href="result_INFP.html";
+            }else if(result == "ISTJ"){
+                location.href="result_ISTJ.html";
+            }else if(result == "ISTJ"){
+                location.href="result_ISTJ.html";
+            }else if(result == "ISTJ"){
+                location.href="result_ISTJ.html";
+            }else if(result == "ISTJ"){
+                location.href="result_ISTJ.html";
+            }
+
+
+            
+        }
+
+          
+        
+    </script>
+</body>
+</html>
