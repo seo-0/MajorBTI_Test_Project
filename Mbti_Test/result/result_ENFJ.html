@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorBTI TEST</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #load_pg{
+            width:100%;
+            height:100%;
+            position:fixed;
+            left:0px;
+            top:0px;
+            background:#fff;
+            text-align: center;
+            z-index:5000; /* 이 값으로 레이어의 위치를 조정합니다. */
+        }
+        div#result_content{
+            border: 2px solid #78c2ad;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            let loading_page = document.getElementById("load_pg");
+            loading_page.style.visibility="hidden";
+        }, 1100);
+        function restart(){
+
+            location.href="../index.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="load_pg" class="py-10 text-center">
+        <div style="position:absolute; top:25%; left:25%; width: 50%;">
+            <h1>Loading...</h1>
+        </div>
+        <div class="progress" style="position:absolute; top:50%; left:25%; width: 50%;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container m-10 p-3">
+            <header>
+                <div class="py-4 text-center">
+                    <a href="../index.html"><h2><b>M</b>ajor<b>BTI TEST</h2></a>
+                </div>
+            </header>
+            <article>
+                <div class="py-3 text-center">
+                    <img src="../image/ENFJ_img.jpg" style="width: 30%; text-align: center;">
+                </div>
+                <div class="py-2 text-center m-1">
+                    <h3 class="text-primary"><b>ENFJ - 특수교육과</b></h3>
+                </div>
+                <div id="result_content" class="p-3">
+                    <ul>
+                        <li>외향적, 직관적, 감정적 ,판단적인 성격특성을 가진 사람입니다.</li>
+                        <li>이 따뜻하고 솔직한 유형은 다른 사람을 돕는 것을 좋아하고 강한 아이디어와 가치를 갖는 경향이 있습니다. 
+                            그들은 목표를 달성하기 위해 창의적인 에너지로 관점을 뒷받침합니다.</li>
+                        <li>특수교육과는 특별한 교육 지원 요구를 가지는 장애 및 일반 학생을 지도하는 초,중등 특수교사를 양성합니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <div class="py-4 text-center">
+                    <button class="btn btn-primary" onclick="restart()">다시하기</a></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

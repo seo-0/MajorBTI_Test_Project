@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorBTI TEST</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #load_pg{
+            width:100%;
+            height:100%;
+            position:fixed;
+            left:0px;
+            top:0px;
+            background:#fff;
+            text-align: center;
+            z-index:5000; /* 이 값으로 레이어의 위치를 조정합니다. */
+        }
+        div#result_content{
+            border: 2px solid #78c2ad;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            let loading_page = document.getElementById("load_pg");
+            loading_page.style.visibility="hidden";
+        }, 1100);
+        function restart(){
+
+            location.href="../index.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="load_pg" class="py-10 text-center">
+        <div style="position:absolute; top:25%; left:25%; width: 50%;">
+            <h1>Loading...</h1>
+        </div>
+        <div class="progress" style="position:absolute; top:50%; left:25%; width: 50%;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container m-10 p-3">
+            <header>
+                <div class="py-4 text-center">
+                    <a href="../index.html"><h2><b>M</b>ajor<b>BTI TEST</h2></a>
+                </div>
+            </header>
+            <article>
+                <div class="py-3 text-center">
+                    <img src="../image/ISFP_img.jpg" style="width: 30%; text-align: center;">
+                </div>
+                <div class="py-2 text-center m-1">
+                    <h3 class="text-primary"><b>ISFP - 도예과</b></h3>
+                </div>
+                <div id="result_content" class="p-3">
+                    <ul>
+                        <li>내향적, 관찰적, 감정적, 미래지향적 성격특성을 가진 사람입니다.</li>
+                        <li>이들은 열린 마음, 접근하는 삶, 새로운 경험, 따뜻한 사람을 갖고 있는 경향이 있습니다. 
+                            순간에 머무르는 능력은 흥미로운 잠재력을 발견하는 데 도움이 됩니다.</li>
+                        <li>도예과는 이론과 실기를 겸비한 도예예술인을 양성하는 교육목표로 전통과 현대를 비롯한 다양한 창업 및 융합 분약의 교과목을 개설 교육하고 있습니다.</li>
+                        <li>도예과에서는 도예인의 기초를 쌓고 더 나아가 전문인의 기능을 갖춘 우수한 도예가를 육성하여, 이를 통해 도자 문화를 계승, 발전시킴으로써 창의적이고 융복합적인 인재 양성에 힘쓰고 있습니다.
+                            도예 관련 전반적인 교육과 창업, 타 분야 융합을 함께 배우는 것으로 사회에 다양하게 기여할 수 있는 문화 예쑬인 양성을 육성하는 학과입니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <div class="py-4 text-center">
+                    <button class="btn btn-primary" onclick="restart()">다시하기</a></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorBTI TEST</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #load_pg{
+            width:100%;
+            height:100%;
+            position:fixed;
+            left:0px;
+            top:0px;
+            background:#fff;
+            text-align: center;
+            z-index:5000; /* 이 값으로 레이어의 위치를 조정합니다. */
+        }
+        div#result_content{
+            border: 2px solid #78c2ad;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            let loading_page = document.getElementById("load_pg");
+            loading_page.style.visibility="hidden";
+        }, 1100);
+        function restart(){
+
+            location.href="../index.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="load_pg" class="py-10 text-center">
+        <div style="position:absolute; top:25%; left:25%; width: 50%;">
+            <h1>Loading...</h1>
+        </div>
+        <div class="progress" style="position:absolute; top:50%; left:25%; width: 50%;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container m-10 p-3">
+            <header>
+                <div class="py-4 text-center">
+                    <a href="../index.html"><h2><b>M</b>ajor<b>BTI TEST</h2></a>
+                </div>
+            </header>
+            <article>
+                <div class="py-3 text-center">
+                    <img src="../image/INTP_img.jpg" style="width: 30%; text-align: center;">
+                </div>
+                <div class="py-2 text-center m-1">
+                    <h3 class="text-primary"><b>INTP - 컴퓨터공학과</b></h3>
+                </div>
+                <div id="result_content" class="p-3">
+                    <ul>
+                        <li>내향적, 직관적, 사고적 및 전망적 성격특성을 가진 사람입니다.</li>
+                        <li>융통성 있는 사고를 하는 사람들은 삶의 여러 측면에 대해 틀에 얽매이지 않는 접근 방식을 취하는 것을 즐깁니다. 
+                            이들은 종종 개인의 창의성과 실험하려는 의지를 섞어 의외의 길을 찾습니다</li>
+                        <li>컴퓨터 관련 기술은 지식공학 산업의 핵심으로, 국가 성장 동력의 기반이 되며, 부가가치가 높은 기술로서 전 산업 분약에 걸쳐 융합이 확대되고 있습니다.</li>
+                        <li>컴퓨터 전문인력에 대한 수요는 점차 높아지고 있으며, 이를 만족시키기 위하여 컴퓨터공학과에서는 수요자 중심의 자율 순환형 공학교육시스템을 기반으로
+                            컴퓨터 밒 IT 산업 분야의 능력있는 인재를 양성함을 목표로 하고 있습니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <div class="py-4 text-center">
+                    <button class="btn btn-primary" onclick="restart()">다시하기</a></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
