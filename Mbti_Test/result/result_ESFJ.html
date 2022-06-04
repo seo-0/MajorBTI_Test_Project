@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorBTI TEST</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #load_pg{
+            width:100%;
+            height:100%;
+            position:fixed;
+            left:0px;
+            top:0px;
+            background:#fff;
+            text-align: center;
+            z-index:5000; /* 이 값으로 레이어의 위치를 조정합니다. */
+        }
+        div#result_content{
+            border: 2px solid #78c2ad;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            let loading_page = document.getElementById("load_pg");
+            loading_page.style.visibility="hidden";
+        }, 1100);
+        function restart(){
+
+            location.href="../index.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="load_pg" class="py-10 text-center">
+        <div style="position:absolute; top:25%; left:25%; width: 50%;">
+            <h1>Loading...</h1>
+        </div>
+        <div class="progress" style="position:absolute; top:50%; left:25%; width: 50%;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container m-10 p-3">
+            <header>
+                <div class="py-4 text-center">
+                    <a href="../index.html"><h2><b>M</b>ajor<b>BTI TEST</h2></a>
+                </div>
+            </header>
+            <article>
+                <div class="py-3 text-center">
+                    <img src="../image/ESFJ_img.jpg" style="width: 30%; text-align: center;">
+                </div>
+                <div class="py-2 text-center m-1">
+                    <h3 class="text-primary"><b>ESFJ - 간호학과</b></h3>
+                </div>
+                <div id="result_content" class="p-3">
+                    <ul>
+                        <li>외향적, 관찰적, 감정적, 판단적 성격특성을 가진 사람입니다.</li>
+                        <li>그들은 세심하고 사람 중심적이며 사회 공동체에 참여하는 것을 즐깁니다. 
+                            그들의 성취는 결정적인 가치에 의해 인도되며 기꺼이 다른 사람들에게 지침을 제공합니다.</li>
+                        <li>간호학과는 환경의 변화와 사회적 요구에 부응하는 전문적 역량을 갖춘 건강전문인 육성을 위해서, 
+                            인간이해와 존중을 바탕으로전인간호사의 실천, 과학적 지식과 비판적 사고능력을 바탕으로 한 전문적 간호 수행, 
+                            효율적 의사소통을 통한 교육과 치료적 돌봄 실천, 과학적 탐구능력의 발휘, 윤리적 규범의 준수 및 지도력 함양, 
+                            변화하는 사회요구에 부응하는 간호실무능력 배양을 교육목표로 합니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <div class="py-4 text-center">
+                    <button class="btn btn-primary" onclick="restart()">다시하기</a></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

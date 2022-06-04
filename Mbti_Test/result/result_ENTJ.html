@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorBTI TEST</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #load_pg{
+            width:100%;
+            height:100%;
+            position:fixed;
+            left:0px;
+            top:0px;
+            background:#fff;
+            text-align: center;
+            z-index:5000; /* 이 값으로 레이어의 위치를 조정합니다. */
+        }
+        div#result_content{
+            border: 2px solid #78c2ad;
+            width: 80%;
+            margin: auto;
+            border-radius: 12px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            let loading_page = document.getElementById("load_pg");
+            loading_page.style.visibility="hidden";
+        }, 1100);
+        function restart(){
+
+            location.href="../index.html"
+        }
+    </script>
+</head>
+<body>
+    <div id="load_pg" class="py-10 text-center">
+        <div style="position:absolute; top:25%; left:25%; width: 50%;">
+            <h1>Loading...</h1>
+        </div>
+        <div class="progress" style="position:absolute; top:50%; left:25%; width: 50%;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container m-10 p-3">
+            <header>
+                <div class="py-4 text-center">
+                    <a href="../index.html"><h2><b>M</b>ajor<b>BTI TEST</h2></a>
+                </div>
+            </header>
+            <article>
+                <div class="py-3 text-center">
+                    <img src="../image/index_img2.jpg" style="width: 30%; text-align: center;">
+                </div>
+                <div class="py-2 text-center m-1">
+                    <h3 class="text-primary"><b>ENTJ - 법학과</b></h3>
+                </div>
+                <div id="result_content" class="p-3">
+                    <ul>
+                        <li>외향적, 직관적, 사고적 및 판단적 성격특성을 가진 사람입니다.</li>
+                        <li>그들은 추진력과 성취를 사랑하는 결단력 있는 사람들입니다. 
+                            그들은 창의적인 비전을 구성하기 위해 정보를 수집하지만 실행하기 전에 오래 주저하는 경우는 드뭅니다.</li>
+                        <li>법학과는 학생들로 하여금 법적 사고력을 배양하고 올바른 가치관과 법률관을 형성하도록 함으로써 국가와 사회 발전에 기여할 수 있는 인재를 양성하는 학과로,
+                            법이론과 법률실무를 적절히 조화시켜 현실에 적용할 수 있는 법률지식 함양에 중점을 두고 있습니다.</li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <div class="py-4 text-center">
+                    <button class="btn btn-primary" onclick="restart()">다시하기</a></button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
