@@ -430,9 +430,10 @@
 
             if (E_count+I_count+N_count+S_count+T_count+F_count+J_count+P_count != 12){
                 alert('모든 문제에 답해주세요');
-                return
+                return;
             }
         
+            console.log(E_count,I_count,N_count,S_count,T_count,F_count,J_count,P_count);
             result=EI+SN+TF+JP;
             if(result == "ENTJ"){
                 location.href="./result/result_ENTJ.html";
