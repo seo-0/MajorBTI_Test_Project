@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국 관광지 테스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">한국 관광지 테스트</a>
+    </header>
+    <section>
+        <article>
+            <h2>문제1</h2>
+            <p>설명1</p>
+            <input type="radio" name="q1" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q1" class="no-button"><span>No</span>
+            <input type="radio" name="q1" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q2" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q2" class="no-button"><span>No</span>
+            <input type="radio" name="q2" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q3" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q3" class="no-button"><span>No</span>
+            <input type="radio" name="q3" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q4" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q4" class="no-button"><span>No</span>
+            <input type="radio" name="q4" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q5" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q5" class="no-button"><span>No</span>
+            <input type="radio" name="q5" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q6" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q6" class="no-button"><span>No</span>
+            <input type="radio" name="q6" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q7" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q7" class="no-button"><span>No</span>
+            <input type="radio" name="q7" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q8" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q8" class="no-button"><span>No</span>
+            <input type="radio" name="q8" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q9" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q9" class="no-button"><span>No</span>
+            <input type="radio" name="q9" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q10" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q10" class="no-button"><span>No</span>
+            <input type="radio" name="q10" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q11" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q11" class="no-button"><span>No</span>
+            <input type="radio" name="q11" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+        <article>
+            <h2>문제2</h2>
+            <p>설명2</p>
+            <input type="radio" name="q12" class="yes-button"><span>Yes</span>
+            <input type="radio" name="q12" class="no-button"><span>No</span>
+            <input type="radio" name="q12" class="maybe-button"><span>Maybe</span>
+            
+        </article>
+
+    </section>
+    <footer>
+        <a onclick="result();">결과보기</a>
+
+    </footer>
+    <script>
+        function result(){
+            let yes_count = 0;
+            let no_count = 0;
+
+            let elements = document.getElementsByClassName('yes-button');
+            for (let i = 0; i < elements.length; i++) {
+                if(elements[i].checked){
+                    yes_count++;
+                }
+                
+            }
+
+            elements = document.getElementsByClassName('no-button');
+            for (let i = 0; i < elements.length; i++) {
+                if(elements[i].checked){
+                    no_count++;
+                }
+                
+            }
+            
+            elements = document.getElementsByClassName('maybe-button');
+            for (let i = 0; i < elements.length; i++) {
+                if(elements[i].checked){
+                    yes_count++;
+                }
+                
+            }
+            if (yes_count + no_count != 12){
+                alert('모든 문제에 답해주세요');
+                return
+            }
+ 
+            if(yes_count == 12){
+                location.href="result_3.html"
+
+            }
+            else if(yes_count == 1){
+                location.href="result_2.html"
+            }
+            else {
+                location.href="result_1.html"
+            }
+
+
+            
+        }
+
+          
+        
+    </script>
+</body>
+</html>
